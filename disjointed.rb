@@ -11,6 +11,17 @@ end
 
 
 
+
+p "dogs".class.methods
+
+
+
+
+
+
+
+
+
 for k, v in myhash
   puts "the key is #{k} and the value is #{v}"
 end
