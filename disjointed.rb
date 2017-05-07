@@ -9,7 +9,11 @@ myhash = Hash.new
   myhash[prop] = value
 end
 
+
+
 for k, v in myhash
   puts "the key is #{k} and the value is #{v}"
 end
 
+
+p 1.class
