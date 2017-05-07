@@ -1,0 +1,16 @@
+
+module MagicThing
+  TYPE = "Cool"
+  def m_power
+    return @m_power
+  end
+
+  def requiremodule.greet
+    return "i am happy"
+  end
+
+  def m_power= aPower
+    @m_power= aPower
+    p $glob
+  end
+end

@@ -1,0 +1,148 @@
+# $glob = 100
+#
+# require 'yaml'
+#
+#
+#
+# $cd_arr = Array.new
+# $fn = 'cd_db.yml'
+#
+#
+# class MyClass
+#   @@numb_things = 0
+#   def initialize aName
+#     @myname = aName
+#     @@numb_things += 1
+#   end
+#
+#   def set_name(aName)
+#     @myname = aName
+#   end
+#
+#   def get_name
+#     return @myname
+#   end
+#
+#   def printGlobal
+#     p "There are #{@@numb_things} things in the superclass"
+#   end
+#
+#   def loadDB
+#     input_data = File.read($fn)
+#     $cd_arr = YAML.load input_data
+#   end
+#
+# end
+#
+# class Treasure < MyClass
+#
+# attr_accessor :myname
+#
+#   def initialize aName, aValue
+#     super aName
+#     @aValue = aValue
+#   end
+# end
+#
+#
+# p $glob
+
+class X
+
+  @@var = 100
+
+  @var = "abc"
+
+  def m
+    p @@var
+    p @var
+  end
+
+  def X.m
+    p @var
+  end
+
+
+  def initialize v
+    @var = v
+    @@var += v
+  end
+end
+
+
+  obj = X.new 5
+
+p obj
+
+obj2 = X.new 10
+
+p obj2
+
+X.m
+
+obj.m
+
+def addup aNum
+  aNum += 1
+  $outercount += 1
+
+end
+
+
+
+# sword = Treasure.new"sword",500
+#
+#
+# sword.m_power=500
+#
+# p MagicThing.greet
+#
+#
+#
+# p "The magical power of the sword is #{sword.m_power}"
+#
+# p MagicThing::TYPE
+#
+# p Math::PI
+
+
+#
+#
+#
+# myarr = {"name"=>"jacob","age"=>"20"}
+#
+# p myarr.keys
+#
+# p myarr.values
+#
+# p (myarr.keys << myarr.values).flatten.reverse
+
+# for i in [1,2,3]
+#   p i
+# end
+
+# for i in 1..10 do
+#   p i
+# end
+#
+# x = 0
+# while x < 3 do p "me"
+#   x += 1
+# end
+# i = 0
+# until i == 10
+#   p "yo"
+#   i += 1
+# end
+
+# 3.times { |i|
+#   p i
+# }
+
+# def showI i
+#   p i
+# end
+#
+#
+# for i in 0..2 do showI i
+# end
