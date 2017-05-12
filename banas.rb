@@ -3,6 +3,7 @@ end
 
 # print "Enter a value\n"
 # first_num = gets.to_i
+
 #
 # print "Enter another value\n"
 #
@@ -10,6 +11,7 @@ end
 #
 # print first_num.to_s + " + " + second_num.to_s +  " = " + (first_num + second_num).to_s
 #
+
 # p 1.class
 #
 # p 1.234.class
@@ -20,6 +22,7 @@ end
 # # Constant
 # A_CONSTANT = 5
 # p A_CONSTANT.class
+
 #
 # write_handler = File.new("yourSum.out","w")
 #
@@ -207,7 +210,6 @@ fullName = firstName + " " +  lastName
 #
 # puts "the dogs \a"
 
-
 # class Animal
 #   def initialize
 #     puts "Creating a new animal"
@@ -307,7 +309,6 @@ puts einstein.name + " says " + einstein.act_smart
 #
 # puts "the value is #{x}"
 
-
 # polymorphism
 # class Bird
 #   def tweet(bird_type)
@@ -376,7 +377,6 @@ puts number_hash["PI"]
 
 superheroes = Hash["Jacob", "Menke", "Barry", "Allen"]
 
-
 superheroes.each do |key, value|
   puts "the key is #{key} and the value is #{value}"
 end
@@ -393,7 +393,6 @@ class Menu
   end
 
 end
-
 
 menu_options = Menu.new
 
@@ -431,4 +430,3 @@ File.open("authors.out") do |record|
     puts "the item is #{item}"
   end
 end
-

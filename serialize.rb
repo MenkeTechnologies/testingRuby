@@ -115,11 +115,9 @@ class Stack
     end
   end
 
-
   def empty?
     @store.size == 0
   end
-
 
   def look
     @store[@top]
@@ -180,13 +178,3 @@ def Queue
     @tail.abs = (@size)
   end
 end
-
-
-
-
-
-
-
-
-
-

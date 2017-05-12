@@ -2,8 +2,6 @@ class MyArray < Array
 
 end
 
-
-
 class Rectangle
   def initialize(length, breadth)
     @length = length
@@ -45,11 +43,9 @@ module Jacob
   end
 end
 
-
 s = Square.new(5)
 
 ss = Square.new(5)
-
 
 class AppConfig
   @config = {}
@@ -67,7 +63,6 @@ class ERPAppConfig < AppConfig
 @config = {}
 end
 
-
 class Item
   attr_reader :item_name, :qty
   attr_writer :item_name, :qty
@@ -77,7 +72,6 @@ class Item
     @qty = qty
   end
 
-
   def hash
     self.item_name.hash ^ self.qty.hash
   end
@@ -85,7 +79,6 @@ class Item
     puts "#eql? invoked"
     self.==(other_item)
   end
-
 
   def ==(other)
     if self.item_name == other.item_name && self.qty == other.qty
@@ -98,4 +91,3 @@ class Item
   end
 
 end
-
